@@ -19,6 +19,7 @@ const App = () => {
       .catch((err) => {
         console.log(err);
       })
+    setWord('');
   }
 
   return (
@@ -27,6 +28,7 @@ const App = () => {
       <Search word = {word} setWord = {setWord} handleSubmit = {handleSearchSubmit}/>
     </div>
   );
+
 }
 
 export default App;
