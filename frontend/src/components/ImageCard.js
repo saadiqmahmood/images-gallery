@@ -16,4 +16,5 @@ const ImageCard = ({ image, deleteImage }) => {
   );
 };
 
+// eslint-disable-next-line prettier/prettier
 export default ImageCard;

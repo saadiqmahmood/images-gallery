@@ -2,7 +2,7 @@ import { useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Header from './components/Header';
 import Search from './components/Search';
-import ImageCard from './components/ImageCard'; 
+import ImageCard from './components/ImageCard';
 import { Container, Row, Col } from 'react-bootstrap';
 
 const UNSPLASH_KEY = process.env.REACT_APP_UNSPLASH_KEY;
@@ -19,7 +19,7 @@ const App = () => {
     )
       .then((res) => res.json())
       .then((data) => {
-        setImages([{...data, title: word}, ...images]);
+        setImages([{ ...data, title: word }, ...images]);
       })
       .catch((err) => {
         console.log(err);
